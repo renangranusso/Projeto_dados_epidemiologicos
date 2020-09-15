@@ -1,0 +1,20 @@
+
+#Cabecalho{
+    width: auto;
+    height: 130px;
+    background-color: rgb(168, 168, 145);
+    margin: 0 auto 0 auto
+}
+
+h1{
+    font-family: sans-serif;
+    background: #222;
+    color: darkred;
+    text-align: center;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+}
+
+h4{
+    text-align: center;
+}
