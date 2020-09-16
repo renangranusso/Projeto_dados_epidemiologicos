@@ -4,3 +4,4 @@ __pycache__/
 .flaskenv
 pyvenv.cfg
 primeira_entrega.txt
+__pycache__
