@@ -2,3 +2,5 @@
 __pycache__/
 .vscode/
 .flaskenv
+pyvenv.cfg
+primeira_entrega.txt
