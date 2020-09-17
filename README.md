@@ -5,9 +5,9 @@ Repositorio criado para commits referente ao projeto de: "Laboratorio de engenha
 
 Descrição Primeira Entrega:
 
-O codigo foi feito na estrutura de pastas padrão de desenvolvimento do Flask:
+O codigo foi feito na estrutura de pastas padrão de desenvolvimento do Flask.
 
-\Pasta Raiz:
+\Pasta Raiz: Pasta Raiz da Aplicação
 
 Controle.py: Arquivo que controla a aplicação e starta a mesma
 
