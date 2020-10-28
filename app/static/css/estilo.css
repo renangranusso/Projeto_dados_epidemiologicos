@@ -1,8 +1,12 @@
 
+#background{
+    background-color: rgb(204, 255, 204);
+}
+
 #Cabecalho{
     width: auto;
     height: 130px;
-    background-color: rgb(168, 168, 145);
+    background-color: rgb(204, 255, 204);
     margin: 0 auto 0 auto
 }
 
@@ -17,4 +21,68 @@ h1{
 
 h4{
     text-align: center;
+}
+
+#Cadastros{
+    text-align: Center;
+    width: 100%;
+    margin: 0 auto 0 auto
+}
+
+#Buttons{
+    display: flex;
+}
+
+.table{
+    text-align: Center;
+    width: 100%;
+}
+.Add_data{
+    float:left; /*<---*/
+    position: relative;
+    width: 50%;
+}
+
+.Add_doenca_assoc{
+    float:left; /*<---*/
+    position: relative;
+    width: 50%;
+}
+#Adicionar{
+    text-align: Center;
+    width: 100%;
+}
+
+#Buttons_Doenca{
+    width: auto;
+    text-align: Center;
+    height: auto;
+    background-color: rgb(193, 242, 209);
+    padding-top: 25px;
+    flex: 0 0 50%;
+    display: inline-block;
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+    border-bottom:3px solid black;
+    border-left:3px solid black;
+    padding: 5px;
+    font-family: "Lucida Console", Courier, monospace;
+    font-weight: bold;
+}
+
+#Buttons_Epidemiologicos{
+    width: auto;
+    text-align: Center;
+    height: auto;
+    background-color: rgb(193, 242, 209);
+    padding-top: 25px;
+    flex: 1;
+    display: inline-block;
+    border-top: 3px solid black;
+    border-bottom:3px solid black;
+    border-right: 3px solid black;
+    border-left:3px solid black;
+    padding:5px;
+    font-family: "Lucida Console", Courier, monospace;
+    font-weight: bold;
 }
