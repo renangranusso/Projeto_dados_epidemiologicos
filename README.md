@@ -10,12 +10,12 @@ Repositorio criado para commits referente ao projeto de: "Laboratorio de engenha
 * Alterar o app.config no arquivo routes.py na linha 6 : 'mysql+pymysql://root:1234@localhost/bd_trabalho' alterando o Usuário (root) e a senha (1234) para os valores correspondentes ao seu Banco de dados.
 
 
-1º Entrega Video: https://youtu.be/xbXQdUL0mbU
+## 1º Entrega Video: https://youtu.be/xbXQdUL0mbU
 
 #### Descrição Primeira Entrega:
 * O codigo foi feito na estrutura de pastas padrão de desenvolvimento do Flask.
 
-2º Entrega Vídeo: https://youtu.be/sF-I4BqtJic
+## 2º Entrega Vídeo: https://youtu.be/sF-I4BqtJic
 
 #### Descrição Segunda Entrega:
 * Foi realizado a navegação completa entre as Páginas do sistema, através de Rotas, e inserido o Primeiro Cadastro de dados e Leitura de dados no Banco de Dados.
