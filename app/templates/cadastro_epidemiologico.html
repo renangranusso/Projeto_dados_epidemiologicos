@@ -15,15 +15,20 @@
 
         <form action="/cadastro_epidemiologico" id='Adicionar' method="post">
             <div class="Add_data">
-                <input type="text" name="data_coleta" id="data_coleta" placeholder="Data da Coleta">
+                <p><h5>Data de coleta</h5></p>
+                <input type="date" name="data_coleta" id="data_coleta" placeholder="Data da Coleta">
             </div>
             <div class="Add_doenca_assoc">
+                <p><h5>Doença Associada</h5></p>
                 <input type="text" name="doenca_associada" id="doenca_associada" placeholder="Doença Associada">
             </div>
             <br>
             <div id="BTN_add">
-                <button>Cadastrar</button>
+                <button class="button">Cadastrar</button>
             </div>
         </form>
+        <div id ="btn_retorno">
+            <a href="index"><button class="Retorno" style="width:220px">Retornar</button></a>
+        </div>
     </body>
 </html>

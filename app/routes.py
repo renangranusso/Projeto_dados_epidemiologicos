@@ -1,9 +1,6 @@
 from app import app
-
 from flask import render_template
-
 from flask import request
-
 from flask_sqlalchemy import SQLAlchemy
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:1234@localhost/bd_trabalho'
@@ -22,16 +19,16 @@ class Doenca(db.Model):
 
 class Epidemiologico(db.Model):
     id = db.Column(db.Integer, primary_key = True, autoincrement = True)
-    data_coleta = db.Column(db.String(100))
+    data_coleta = db.Column(db.String(10))
     doenca_associada = db.Column(db.String(100))
 
     def __init__(self, data_coleta, doenca_associada):
         self.data_coleta = data_coleta
         self.doenca_associada = doenca_associada
-
+     
 db.create_all()
 
-@app.route('/') #raiz do sistema.
+@app.route('/index') #raiz do sistema.
 def index():
     return render_template('index.html')
 
@@ -43,10 +40,10 @@ def cadastro_doenca():
 @app.route('/cadastro_epidemiologico', methods=['GET' , 'POST'])
 def cadastro_epidemiologico():
     if request.method == 'POST':
-        epidemio = Epidemiologico(request.form['data_coleta'], request.form['doenca_associada'])
-        db.session.add(epidemio)
-        db.session.commit()
-        #return redirect(url_for('index'))
+        if request.form['data_coleta'] != "" and request.form['doenca_associada'] != "":
+            epidemio = Epidemiologico(request.form['data_coleta'], request.form['doenca_associada'])
+            db.session.add(epidemio)
+            db.session.commit()
     return render_template('cadastro_epidemiologico.html')
 
 @app.route('/visualizacao_doencas', methods=['GET'])
