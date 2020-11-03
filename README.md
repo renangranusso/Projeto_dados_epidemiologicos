@@ -15,7 +15,7 @@ Repositorio criado para commits referente ao projeto de: "Laboratorio de engenha
 #### Descrição Primeira Entrega:
 * O codigo foi feito na estrutura de pastas padrão de desenvolvimento do Flask.
 
-2º Entrega Vídeo: 
+2º Entrega Vídeo: https://youtu.be/sF-I4BqtJic
 
 #### Descrição Segunda Entrega:
 * Foi realizado a navegação completa entre as Páginas do sistema, através de Rotas, e inserido o Primeiro Cadastro de dados e Leitura de dados no Banco de Dados.
