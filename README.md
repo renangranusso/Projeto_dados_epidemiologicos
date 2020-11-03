@@ -1,7 +1,7 @@
 # Projeto_dados_epidemiologicos
 Repositorio criado para commits referente ao projeto de: "Laboratorio de engenharia de software"
 
-## Requisitos para um correto funcionamento do Sistema:
+## Requisitos para um correto funcionamento / Build do Sistema:
 
 * Instalar todas as Bilbiotecas presentes no requirements.txt (cada versão do sistema acrescenta mais bibliotecas)
 * Atualmente foi acrescentada diversas bibliotecas novas por conta de problemas com sintaxe 
