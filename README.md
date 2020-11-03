@@ -37,13 +37,13 @@ no caso a aplicação está sendo executada como debug=True (onde a aplicação 
 ### Pasta App:
   * Pasta em que ficam os arquivos Front end do sistema e os modulos de configurações
 
-  ######Pasta templates:
+  ###### Pasta templates:
   * Pasta em que ficaram armazaendos os arquivos HTML do sistema
   
-  ######Pasta static:
+  ###### Pasta static:
  * Pasta em que ficaram armazenados os arquivos JavaScript e CSS do sistema
  
-  ######Arquivo __init__.py: 
+  ###### Arquivo __init__.py: 
   
   * Modulo que cria a instância da aplicação flask (app = Flask(_name_)), abaixo da instancia está a importação das rotas do sistema, o mesmo está no fim do arquivo para evitar que o flask entre em um loop inifinito de importação.
 
