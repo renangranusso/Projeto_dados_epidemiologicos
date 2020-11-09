@@ -9,6 +9,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
 class Doenca(db.Model):
+    __tablename__ = 'Doenca'
     id = db.Column(db.Integer, primary_key = True, autoincrement = True)
     nome = db.Column(db.String(100))
     sintomas = db.Column(db.String(100))
@@ -18,6 +19,7 @@ class Doenca(db.Model):
         self.sintomas = sintomas
 
 class Epidemiologico(db.Model):
+    __tablename__ = 'Epidemiologico'
     id = db.Column(db.Integer, primary_key = True, autoincrement = True)
     data_coleta = db.Column(db.String(10))
     doenca_associada = db.Column(db.String(100))
@@ -25,7 +27,7 @@ class Epidemiologico(db.Model):
     def __init__(self, data_coleta, doenca_associada):
         self.data_coleta = data_coleta
         self.doenca_associada = doenca_associada
-     
+
 db.create_all()
 
 @app.route('/index') #raiz do sistema.
