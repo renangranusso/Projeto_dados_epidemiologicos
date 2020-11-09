@@ -7,8 +7,8 @@ Repositorio criado para commits referente ao projeto de: "Laboratorio de engenha
 * utilizar do Banco de Dados Mysql
 * Criar de uma base de dados dentro do Mysql com o nome: bd_trabalho, ou especificar uma base de dados de sua preferência em: 'mysql+pymysql://root:1234@localhost/__bd_trabalho__' no arquivo __initi.py__.
 * Alterar o app.config no arquivo ____init____.py (presente na pasta App) na linha 9 : 
-'mysql+pymysql://root:1234@localhost/bd_trabalho'
-alterando o Usuário (root) e a senha (1234) para os valores correspondentes ao seu Banco de dados.
+'mysql+pymysql://__root__:__1234__@localhost/bd_trabalho'
+alterando o Usuário (__root__) e a senha (__1234__) para os valores correspondentes ao seu Banco de dados.
 
 
 ## 1º Entrega Video: https://youtu.be/xbXQdUL0mbU
