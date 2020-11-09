@@ -5,7 +5,7 @@ Repositorio criado para commits referente ao projeto de: "Laboratorio de engenha
 
 * Instalar todas as Bilbiotecas presentes no requirements.txt (cada versão do sistema acrescenta mais bibliotecas) Atualmente foi acrescentada diversas bibliotecas novas por conta de problemas com sintaxe 
 * utilizar do Banco de Dados Mysql
-* Criar de uma base de dados dentro do Mysql com o nome: bd_trabalho, ou especificar uma base de dados de sua preferência em: 'mysql+pymysql://root:1234@localhost/__bd_trabalho__' no arquivo __initi.py__.
+* Criar de uma base de dados dentro do Mysql com o nome: bd_trabalho, ou especificar uma base de dados de sua preferência em: 'mysql+pymysql://root:1234@localhost/__bd_trabalho__' no arquivo na linha 9 do arquivo __initi.py__.
 * Alterar o app.config no arquivo ____init____.py (presente na pasta App) na linha 9 : 
 'mysql+pymysql://__root__:__1234__@localhost/bd_trabalho'
 alterando o Usuário (__root__) e a senha (__1234__) para os valores correspondentes ao seu Banco de dados.
