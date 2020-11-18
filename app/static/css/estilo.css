@@ -1,6 +1,7 @@
 
 #background{
     background-color: rgb(204, 255, 204);
+    border: 4px solid #494949 !important;
 }
 
 #Cabecalho{
@@ -10,9 +11,21 @@
     margin: 0 auto 0 auto
 }
 
-#mostrarData{
+#mostrarHora{
     text-align: center;
+    font-family: sans-serif;
+    color: #494949 !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background:rgb(204, 255, 204);
+    transition: all 0.4s ease 0s;
+}
 
+#mostrarHora:hover{
+    color: #ffffff !important;
+    background: #606060;
+    border-color: #A0A0A0 !important;
+    transition: all 0.4s ease 0s;
 }
 
 h1{
@@ -125,6 +138,13 @@ table.center {
     font-weight: bold;
 }
 
+#Buttons_Doenca:hover{
+    color: #ffffff !important;
+    background: #606060;
+    border-color: #A0A0A0 !important;
+    transition: all 0.4s ease 0s;
+}
+
 #Buttons_Epidemiologicos{
     width: auto;
     text-align: Center;
@@ -140,4 +160,11 @@ table.center {
     padding:5px;
     font-family: "Lucida Console", Courier, monospace;
     font-weight: bold;
+}
+
+#Buttons_Epidemiologicos:hover{
+    color: #ffffff !important;
+    background: #606060;
+    border-color: #A0A0A0 !important;
+    transition: all 0.4s ease 0s;
 }

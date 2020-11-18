@@ -5,6 +5,7 @@
         <meta charset="utf-8"/>
         <title> Index do Projeto </title>
         <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo.css') }}">
+        <link rel="shortcut icon" href="{{url_for('static', filename='grafico.jpg')}}"/>
     </head>
     <body>
         <div id='Cabecalho'>
@@ -30,5 +31,6 @@
         <div id ="btn_retorno">
             <a href="index"><button class="Retorno" style="width:220px">Retornar</button></a>
         </div>
+        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
     </body>
 </html>
