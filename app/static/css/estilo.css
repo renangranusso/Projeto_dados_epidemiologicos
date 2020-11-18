@@ -10,6 +10,11 @@
     margin: 0 auto 0 auto
 }
 
+#mostrarData{
+    text-align: center;
+
+}
+
 h1{
     font-family: sans-serif;
     background: #222;
@@ -37,7 +42,18 @@ h4{
 .table{
     text-align: Center;
     width: 100%;
+    margin-left:auto; 
+    margin-right:auto;
 }
+
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+    border: 1px solid black;
+    padding: 15px;
+    border-spacing: 5px;
+    text-align: Center;
+  }
 
 #Adicionar{
     padding: 1%;

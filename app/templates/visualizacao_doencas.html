@@ -13,15 +13,20 @@
             <p><h4>Professor: Fabrício Galende Marques de Carvalho</h4></p>
         </div>
 
-        <table class="table">
+        <table class="center" rules="all">
             <thead>
                 <tr>
-                    <th>Nome</th>
+                    <th>Doença</th>
                     <th>Sintomas</th>
                 </tr>
             </thead>
             <tbody>
-
+                {% for e in doenca %}
+                    <tr>
+                        <td>{{e.nome}}</td>
+                        <td>{{e.sintomas}}</td>
+                    </tr>
+                {% endfor %}
             </tbody>
         </table>
         

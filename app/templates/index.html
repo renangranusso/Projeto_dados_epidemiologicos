@@ -4,7 +4,10 @@
     <head>
         <meta charset="utf-8"/>
         <title> Index do Projeto </title>
+        
         <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo.css') }}">
+        <link rel="shortcut icon" href="{{url_for('static', filename='grafico.jpg')}}"/>
+       
     </head>
     <body>
         <div id='background'> 
@@ -13,7 +16,6 @@
                 <p><h4>Aluno: Renan Palomino Granusso, RA: 1460481711074</h4></p>
                 <p><h4>Professor: Fabrício Galende Marques de Carvalho</h4></p>
             </div>
-
             <div id='Cadastros'>
                 <div id='Buttons_Doenca'>
                     <p calss="titulos">DOENÇAS</p>
@@ -25,7 +27,9 @@
                     <a href='cadastro_epidemiologico'><button type="button" style="width:220px">Cadastrar Dado Epidemiologico</button></a>
                     <a href='visualizacao_epidemiologica'><button type="button" style="width:220px">Visualizar dados Epidemiologicos</button></a>
                 </div>
+                <p id="mostrarData"></p>
             </div>
         </div>
+        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
     </body>
 </html>
