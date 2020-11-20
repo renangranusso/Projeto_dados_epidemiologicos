@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <title> Index do Projeto </title>
+        <title> Visualização Epidemiológicas </title>
         <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo.css') }}">
         <link rel="shortcut icon" href="{{url_for('static', filename='grafico.jpg')}}"/>
     </head>
@@ -12,7 +12,9 @@
             <p class="Titulo"><h1>Trabalho: Dados Epidemiológicos</h1></p>
             <p><h4>Aluno: Renan Palomino Granusso, RA: 1460481711074</h4></p>
             <p><h4>Professor: Fabrício Galende Marques de Carvalho</h4></p>
+        </div>
 
+        <div class="Grafico">
             <table class="center" rules="all">
                 <thead>
                     <tr>
@@ -29,13 +31,13 @@
                     {% endfor %}
                 </tbody>
             </table>
-            <div id ="grafico">
-                <p><h4>Visualização Gráfica</h4></p>
-                <img src="{{url_for('static', filename='grafico.jpg')}}"/>
-            </div>
-            <div id ="btn_retorno">
-                <a href="index"><button class="Retorno" style="width:220px">Retornar</button></a>
-            </div>
+        </div>
+        <div id ="grafico">
+            <p><h4>Visualização Gráfica</h4></p>
+            <img src="{{url_for('static', filename='grafico.jpg')}}"/>
+        </div>
+        <div id ="btn_retorno">
+            <a href="index"><button class="Retorno" style="width:220px">Retornar</button></a>
         </div>
         <script src="{{ url_for('static', filename='js/script.js') }}"></script>
     </body>

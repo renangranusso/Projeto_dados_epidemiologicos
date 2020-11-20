@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <title> Index do Projeto </title>
+        <title> Visualizar Doenças </title>
         <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo.css') }}">
         <link rel="shortcut icon" href="{{url_for('static', filename='grafico.jpg')}}"/>
     </head>
@@ -14,22 +14,24 @@
             <p><h4>Professor: Fabrício Galende Marques de Carvalho</h4></p>
         </div>
 
-        <table class="center" rules="all">
-            <thead>
-                <tr>
-                    <th>Doença</th>
-                    <th>Sintomas</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for e in doenca %}
+        <div id="Tabela">
+            <table class="center" rules="all">
+                <thead>
                     <tr>
-                        <td>{{e.nome}}</td>
-                        <td>{{e.sintomas}}</td>
+                        <th>Doença</th>
+                        <th>Sintomas</th>
                     </tr>
-                {% endfor %}
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    {% for e in doenca %}
+                        <tr>
+                            <td>{{e.nome}}</td>
+                            <td>{{e.sintomas}}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
         
         <div id ="btn_retorno">
             <a href="index"><button class="Retorno" style="width:220px">Retornar</button></a>

@@ -15,8 +15,8 @@ function time() {
   if(s < 10){
       s = "0" + s
   }
-  
   hora.textContent = "Hora Atual: " + h + ":" + m + ":" + s
+  
 }
 
 setInterval(time, 1000);

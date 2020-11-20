@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <title> Index do Projeto </title>
+        <title> Cadastro de Doença </title>
         <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo.css') }}">
         <link rel="shortcut icon" href="{{url_for('static', filename='grafico.jpg')}}"/>
     </head>
@@ -12,9 +12,7 @@
             <p class="Titulo"><h1>Trabalho: Dados Epidemiológicos</h1></p>
             <p><h4>Aluno: Renan Palomino Granusso, RA: 1460481711074</h4></p>
             <p><h4>Professor: Fabrício Galende Marques de Carvalho</h4></p>
-        </div>
-        <div id ='Cadastros'>
-            <p>CADASTRO DE DOENÇAS</p>
+            <p id="mostrarHora"></p>
         </div>
 
         <form action="/cadastro_doenca" id='Adicionar' method="post">
