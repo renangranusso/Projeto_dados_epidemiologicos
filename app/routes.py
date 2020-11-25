@@ -1,6 +1,7 @@
 from app import app
 from flask import render_template
 from flask import request
+from flask import redirect, url_for
 from app.tables import db
 from app.tables import Epidemiologico
 from app.tables import Doenca
@@ -31,6 +32,13 @@ def cadastro_epidemiologico():
 def visualizacao_doencas():
     doenca = Doenca.query.all()
     return render_template('visualizacao_doencas.html', doenca=doenca)
+
+@app.route('/delete/<int:id>')
+def remover(id):
+    doenca = Doenca.query.get(id)
+    db.session.delete(doenca)
+    db.session.commit()
+    return redirect(url_for('visualizacao_doencas'))
 
 @app.route('/visualizacao_epidemiologica', methods=['GET'])
 def visualizacao_epidemiologica():

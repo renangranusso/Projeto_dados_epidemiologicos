@@ -15,11 +15,16 @@
         </div>
 
         <div id="Tabela">
+            <br>
+            <p id="nome_tabela">VISUALIZAÇÃO DE DOENÇAS CADASTRADAS</p>
+            <br>
+            <br>
             <table class="center" rules="all">
                 <thead>
                     <tr>
                         <th>Doença</th>
                         <th>Sintomas</th>
+                        <th id="remover">Ação</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -27,10 +32,12 @@
                         <tr>
                             <td>{{e.nome}}</td>
                             <td>{{e.sintomas}}</td>
+                            <td><a href="/delete/{{e.id}}">Excluir Regsitro</a></td>
                         </tr>
                     {% endfor %}
                 </tbody>
             </table>
+            <br>
         </div>
         
         <div id ="btn_retorno">

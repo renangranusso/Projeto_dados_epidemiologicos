@@ -36,9 +36,31 @@ h1{
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #fff;
 }
+#nome_tabela{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color:rgb(204, 255, 204);
+    font-family: sans-serif;
+    -webkit-text-stroke-width: 1px;
+}
+
 
 #Tabela{
-    margin-top: 20px;
+    margin-top: 0px;
+    text-align: center;
+    background-color: rgb(204, 255, 204);
+    width: auto;
+}
+
+table{
+    background-color: lightgrey !important;
+}
+
+tr:hover{
+    color: #ffffff !important;
+    background: #606060;
+    transition: all 0.2s ease 0s;
+    border-color: black !important;
 }
 
 h4{
@@ -73,8 +95,15 @@ table.center {
   }
 
 #Adicionar{
+    margin-left: 30%;
+    margin-right:30%;
+    border: 4px solid #494949 !important;
     padding: 1%;
     text-align: center;
+    background-color: lightgrey !important;
+}
+.Adicionar{
+    background-color:rgb(204, 255, 204);
 }
 .Add_data{
     display: inline-block;    
@@ -116,6 +145,7 @@ table.center {
     font-weight: bold;
     margin: 0 auto 0 auto;
     margin-bottom: 50px;
+    background-color: rgb(204, 255, 204);
 }
 
 #grafico{
