@@ -9,6 +9,8 @@ Repositorio criado para commits referente ao projeto de: "Laboratorio de engenha
 * Alterar o app.config no arquivo ____init____.py (presente na pasta App) na linha 9 : 
 'mysql+pymysql://__root__:__1234__@localhost/bd_trabalho'
 alterando o Usuário (__root__) e a senha (__1234__) para os valores correspondentes ao seu Banco de dados.
+* Arquivo Controle.py é o arquivo que starta a aplicção.
+* Para abrir a primeira pagina, colocar o endereço de IP local seguido por /index.
 
 
 ## 1º Entrega Video: https://youtu.be/xbXQdUL0mbU
