@@ -6,6 +6,9 @@
         <title> Visualização Epidemiológicas </title>
         <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo.css') }}">
         <link rel="shortcut icon" href="{{url_for('static', filename='grafico.jpg')}}"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
     </head>
     <body>
         <div id='Cabecalho'>
@@ -14,12 +17,19 @@
             <p><h4>Professor: Fabrício Galende Marques de Carvalho</h4></p>
         </div>
 
-        <div class="Grafico">
-            <table class="center" rules="all">
+        <div id ="grafico">
+            <select id="doencas" name="doencas" onchange="getSelected();">
+                    <option value="">Selcione uma Doença!</option>
+                {% for e in Epidemio %}
+                    <option value="{{ e.doenca_associada }}">{{ e.doenca_associada }}</option>
+                {% endfor %}
+            </select>
+            <p><h4>Evolução de Epidemia</h4></p>
+            <table id="dataset" rules="all" style="display: none">
                 <thead>
                     <tr>
-                        <th>Data de Coleta</th>
-                        <th>Doença Associada</th>
+                        <th>data</th>
+                        <th>doenca</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -29,15 +39,12 @@
                             <td>{{e.doenca_associada}}</td>
                         </tr>
                     {% endfor %}
-                </tbody>
-            </table>
-        </div>
-        <div id ="grafico">
-            <p><h4>Visualização Gráfica</h4></p>
-            <img src="{{url_for('static', filename='grafico.jpg')}}"/>
+            <canvas class="chart-line"></canvas>
+
         </div>
         <div id ="btn_retorno">
             <a href="index"><button class="Retorno" style="width:220px">Retornar</button></a>
+            <p id="mostrarHora"></p>
         </div>
         <script src="{{ url_for('static', filename='js/script.js') }}"></script>
     </body>

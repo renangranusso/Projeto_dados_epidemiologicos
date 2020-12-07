@@ -119,7 +119,7 @@ table.center {
     padding:20px;
 }
 
-.button{
+.button_cad{
     color: #494949 !important;
     text-transform: uppercase;
     text-decoration: none;
@@ -129,7 +129,24 @@ table.center {
     display: inline-block;
     transition: all 0.4s ease 0s;
 }
-.button:hover{
+.button_cad:hover{
+    color: #ffffff !important;
+    background: #606060;
+    border-color: #A0A0A0 !important;
+    transition: all 0.4s ease 0s;
+}
+
+.button_cad_doenca{
+    color: #494949 !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #ffffff;
+    padding: 10px;
+    border: 4px solid #494949 !important;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+}
+.button_cad_doenca:hover{
     color: #ffffff !important;
     background: #606060;
     border-color: #A0A0A0 !important;
@@ -148,11 +165,16 @@ table.center {
     background-color: rgb(204, 255, 204);
 }
 
+select{
+    width: 220px;   
+}
+
 #grafico{
     text-align: Center;
     padding-top: 50px;
     padding: 5px;
     margin: 0 auto 0 auto;
+    background-color: rgb(204, 255, 204);
 }
 
 #Buttons_Doenca{
